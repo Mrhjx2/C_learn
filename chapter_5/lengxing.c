@@ -10,8 +10,15 @@
 int main()
 {
     int n, i, j, k;
-    printf("Please input a number for cengshu: ");
-    scanf("%d",&n);
+    //printf("Please input a number for cengshu: ");
+    do
+    {
+        //scanf("%d",&n);
+        printf("Please input a number for cengshu: ");
+        scanf("%d",&n);
+    }
+    while( n%2 == 0 );
+
     for(i=1; i <= (n+1)/2; i++)
     {
         for(j=1; j <= (n+1)/2-i; j++ )
